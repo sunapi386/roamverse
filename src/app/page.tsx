@@ -8,7 +8,7 @@ const projects = [
   {
     name: "roamllamas",
     desc: "Artistic NFT collection rewarded to stake pool delegators. Unique generative llama artwork.",
-    link: "#nfts",
+    link: "/nft",
     tag: "NFTs",
   },
   {
@@ -102,7 +102,7 @@ function Header() {
         <nav className="flex items-center gap-6 text-sm text-white/40">
           <a href="#projects" className="hover:text-white/80 transition-colors">Projects</a>
           <a href="#staking" className="hover:text-white/80 transition-colors">Staking</a>
-          <a href="#nfts" className="hover:text-white/80 transition-colors">NFTs</a>
+          <a href="/nft" className="hover:text-white/80 transition-colors">NFTs</a>
           <a href="#team" className="hover:text-white/80 transition-colors">Team</a>
           <a
             href="https://github.com/sunapi386"

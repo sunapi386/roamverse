@@ -108,6 +108,7 @@ export default async function NftPage() {
             <a href="/#staking" className="hover:text-white/80 transition-colors">Staking</a>
             <a href="/nft" className="text-violet-400">NFTs</a>
             <a href="/#team" className="hover:text-white/80 transition-colors">Team</a>
+            <a href="/docs" className="hover:text-white/80 transition-colors">Docs</a>
           </nav>
         </div>
       </header>

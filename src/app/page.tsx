@@ -104,8 +104,9 @@ function Header() {
           <a href="#staking" className="hover:text-white/80 transition-colors">Staking</a>
           <a href="/nft" className="hover:text-white/80 transition-colors">NFTs</a>
           <a href="#team" className="hover:text-white/80 transition-colors">Team</a>
+          <a href="/docs" className="hover:text-white/80 transition-colors">Docs</a>
           <a
-            href="https://github.com/sunapi386"
+            href="https://github.com/sunapi386/roamverse"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white/80 transition-colors"

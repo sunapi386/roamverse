@@ -84,20 +84,8 @@ export default function Home() {
       <Hero />
       <Projects />
       <StakeDetails />
-      <section id="stats" className="py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-2 text-white/90">Live Pool Stats</h2>
-          <p className="text-center text-white/40 mb-10 text-sm">On-chain ROAM metrics, sourced from Koios</p>
-          <PoolStats />
-        </div>
-      </section>
-      <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-2 text-white/90">Node Health</h2>
-          <p className="text-center text-white/40 mb-10 text-sm">Block producer &middot; relay &mdash; CPU, memory, uptime</p>
-          <NodeHealth />
-        </div>
-      </section>
+      <LiveStats />
+      <NodeHealthSection />
       <WhatIsStaking />
       <NFTRewards />
       <Team />
@@ -191,6 +179,30 @@ function Projects() {
             </a>
           ))}
         </div>
+      </div>
+    </section>
+  )
+}
+
+function LiveStats() {
+  return (
+    <section id="stats" className="py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-4 text-white/90">Live Pool Stats</h2>
+        <p className="text-center text-white/30 mb-16 text-sm">On-chain metrics for the ROAM stake pool, sourced from Koios</p>
+        <PoolStats />
+      </div>
+    </section>
+  )
+}
+
+function NodeHealthSection() {
+  return (
+    <section id="health" className="py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-4 text-white/90">Node Health</h2>
+        <p className="text-center text-white/30 mb-16 text-sm">Live infrastructure status for the block producer and relay</p>
+        <NodeHealth />
       </div>
     </section>
   )

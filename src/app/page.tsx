@@ -1,5 +1,4 @@
 import PoolStats from "@/components/PoolStats"
-import NodeHealth from "@/components/NodeHealth"
 
 const projects = [
   {
@@ -81,11 +80,11 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
+      <PausedNotice />
       <Hero />
       <Projects />
       <StakeDetails />
       <LiveStats />
-      <NodeHealthSection />
       <WhatIsStaking />
       <NFTRewards />
       <Team />
@@ -196,13 +195,16 @@ function LiveStats() {
   )
 }
 
-function NodeHealthSection() {
+function PausedNotice() {
   return (
-    <section id="health" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-4 text-white/90">Node Health</h2>
-        <p className="text-center text-white/30 mb-16 text-sm">Live infrastructure status for the block producer and relay</p>
-        <NodeHealth />
+    <section id="status" className="pt-28 pb-8 px-6">
+      <div className="max-w-3xl mx-auto rounded-xl border border-amber-400/30 bg-amber-400/5 p-6">
+        <h2 className="text-xl font-semibold text-amber-300 mb-2">ROAM is paused</h2>
+        <p className="text-white/70 text-sm leading-relaxed">
+          As of November 2026 our block producer and relay are offline, so the pool is not making blocks
+          and delegators will not earn rewards. Your ADA is safe and never left your wallet. To keep earning,
+          you can redelegate to another pool from your wallet at any time. Thank you to everyone who staked with us.
+        </p>
       </div>
     </section>
   )
